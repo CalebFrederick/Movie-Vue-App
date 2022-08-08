@@ -4,6 +4,9 @@ import MoviesEdit from "../views/MoviesEdit.vue";
 import MoviesIndex from "../views/MoviesIndex.vue";
 import MoviesNew from "../views/MoviesNew.vue";
 import MoviesShow from "../views/MoviesShow.vue";
+import SignupView from "../views/SignupView.vue";
+import LoginView from "../views/LoginView.vue";
+import LogoutView from "../views/LogoutView.vue";
 
 const routes = [
   {
@@ -30,6 +33,21 @@ const routes = [
     path: "/movies/:id/edit",
     name: "movies_edit",
     component: MoviesEdit,
+  },
+  {
+    path: "/signup",
+    name: "signup",
+    component: SignupView,
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: LoginView,
+  },
+  {
+    path: "/logout",
+    name: "logout",
+    component: LogoutView,
   },
 ];
 
